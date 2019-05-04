@@ -10,15 +10,8 @@
 
 <%params[:pirate][:ships].each do |ship_data|%>
 <%@ship = Ship.new(ship_data)%>
+  <h2>Ship Name: <%=@ship.name%> </h2>
+  <h2>Ship Booty: <%=@ship.booty%> </h2>
+  <h2>Ship Type: <%=@ship.type%> </h2>
 <%end%>
 
-<h2>Ship Name: <%=@ship.name%> </h2>
-<h2>Ship Booty: <%=@ship.booty%> </h2>
-<h2>Ship Type: <%=@ship.type%> </h2>
-
-<h2>Display your second ship here</h2>
-
-<%ship = Ship.new(params)%>
-<h2>Ship Name: <%=@ship.name%> </h2>
-<h2>Ship Booty: <%=@ship.booty%> </h2>
-<h2>Ship Type: <%=@ship.type%> </h2>
